@@ -19,4 +19,8 @@ const str2 = str.charAt(0).toUpperCase() + str.slice(1);
 console.log(str2);
 
 const numbers = [22, 36, 2, 6, 89, 19];
-console.log(Math.max(22, 36, 2, 6, 89, 19));
+
+numbers.sort(function(a, b) { return a - b });
+
+let highest = numbers[numbers.length - 1];
+console.log(numbers);
