@@ -18,9 +18,28 @@ const str = 'i am a web developer';
 const str2 = str.charAt(0).toUpperCase() + str.slice(1);
 console.log(str2);
 
-const numbers = [22, 36, 2, 6, 89, 19];
+const numbers = [222, 36, 2, 66, 89, 19];
 
 numbers.sort(function(a, b) { return a - b });
 
 let highest = numbers[numbers.length - 1];
 console.log(numbers);
+
+
+
+var fname = prompt("type your name")
+
+console.log(fname)
+
+var status = prompt("Hello " + fname + ", do u want to log in as an admin or user?");
+
+var status1 = 'admin'
+var status2 = 'user'
+if (status == "admin") {
+
+    alert("You're logged in as an admin ")
+} else if (status == "user") {
+    alert("You're logged in as a user ")
+} else {
+    alert("Please give a right value in")
+}
